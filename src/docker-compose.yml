@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  tvprogramdb.webapi:
+    image: tvprogramdb.webapi
+    build:
+      context: ./TvProgramDB.WebApi
+      dockerfile: Dockerfile

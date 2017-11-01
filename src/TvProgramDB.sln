@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvProgramDB.Crawler", "TvProgramDB.Crawler\TvProgramDB.Crawler.csproj", "{3695A345-9A1C-4EF6-8B99-5D8F616A377B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvProgramDB.WebApi", "TvProgramDB.WebApi\TvProgramDB.WebApi.csproj", "{D5C5EF1A-B063-4159-AFB1-E5C6E49A9637}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8E6438EF-F1C4-4E91-A87F-3636F4205595}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvProgramDB.Infrastructure", "TvProgramDB.Infrastructure\TvProgramDB.Infrastructure.csproj", "{39FF8B17-CE5D-4892-8CDC-6EE0CE1F70C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvProgramDB.Core", "TvProgramDB.Core\TvProgramDB.Core.csproj", "{3352B8C4-607C-456C-97B8-6DA2BAFCCD24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{50DEE92D-CF55-4469-986A-1D5B66A68E67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvProgramDB.Core.Tests", "TvProgramDB.Core.Tests\TvProgramDB.Core.Tests.csproj", "{5CA4A24D-D436-4F01-BEA1-CB5FAF4D85D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3695A345-9A1C-4EF6-8B99-5D8F616A377B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3695A345-9A1C-4EF6-8B99-5D8F616A377B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3695A345-9A1C-4EF6-8B99-5D8F616A377B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3695A345-9A1C-4EF6-8B99-5D8F616A377B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C5EF1A-B063-4159-AFB1-E5C6E49A9637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C5EF1A-B063-4159-AFB1-E5C6E49A9637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C5EF1A-B063-4159-AFB1-E5C6E49A9637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C5EF1A-B063-4159-AFB1-E5C6E49A9637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6438EF-F1C4-4E91-A87F-3636F4205595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6438EF-F1C4-4E91-A87F-3636F4205595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6438EF-F1C4-4E91-A87F-3636F4205595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6438EF-F1C4-4E91-A87F-3636F4205595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39FF8B17-CE5D-4892-8CDC-6EE0CE1F70C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39FF8B17-CE5D-4892-8CDC-6EE0CE1F70C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39FF8B17-CE5D-4892-8CDC-6EE0CE1F70C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39FF8B17-CE5D-4892-8CDC-6EE0CE1F70C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3352B8C4-607C-456C-97B8-6DA2BAFCCD24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3352B8C4-607C-456C-97B8-6DA2BAFCCD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3352B8C4-607C-456C-97B8-6DA2BAFCCD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3352B8C4-607C-456C-97B8-6DA2BAFCCD24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA4A24D-D436-4F01-BEA1-CB5FAF4D85D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA4A24D-D436-4F01-BEA1-CB5FAF4D85D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA4A24D-D436-4F01-BEA1-CB5FAF4D85D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA4A24D-D436-4F01-BEA1-CB5FAF4D85D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5CA4A24D-D436-4F01-BEA1-CB5FAF4D85D6} = {50DEE92D-CF55-4469-986A-1D5B66A68E67}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F71E0805-3E0A-4F50-871B-9A32D48D3C6A}
+	EndGlobalSection
+EndGlobal
