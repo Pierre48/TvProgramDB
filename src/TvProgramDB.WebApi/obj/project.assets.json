@@ -12542,11 +12542,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\users\\pierr\\source\\repos\\TvProgramDB\\TvProgramDB.WebApi\\TvProgramDB.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\pierr\\source\\repos\\TvProgramDB\\src\\TvProgramDB.WebApi\\TvProgramDB.WebApi.csproj",
       "projectName": "TvProgramDB.WebApi",
-      "projectPath": "c:\\users\\pierr\\source\\repos\\TvProgramDB\\TvProgramDB.WebApi\\TvProgramDB.WebApi.csproj",
+      "projectPath": "C:\\Users\\pierr\\source\\repos\\TvProgramDB\\src\\TvProgramDB.WebApi\\TvProgramDB.WebApi.csproj",
       "packagesPath": "C:\\Users\\pierr\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\pierr\\source\\repos\\TvProgramDB\\TvProgramDB.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\pierr\\source\\repos\\TvProgramDB\\src\\TvProgramDB.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

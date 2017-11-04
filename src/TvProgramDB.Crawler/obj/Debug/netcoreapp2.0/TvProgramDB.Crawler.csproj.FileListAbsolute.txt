@@ -9,3 +9,14 @@ c:\users\pierr\source\repos\TvProgramDB\TvProgramDB.Crawler\obj\Debug\netcoreapp
 c:\users\pierr\source\repos\TvProgramDB\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.AssemblyInfo.cs
 c:\users\pierr\source\repos\TvProgramDB\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.dll
 c:\users\pierr\source\repos\TvProgramDB\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\bin\Debug\netcoreapp2.0\TvProgramDB.Crawler.deps.json
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\bin\Debug\netcoreapp2.0\TvProgramDB.Crawler.runtimeconfig.json
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\bin\Debug\netcoreapp2.0\TvProgramDB.Crawler.runtimeconfig.dev.json
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\bin\Debug\netcoreapp2.0\TvProgramDB.Crawler.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\bin\Debug\netcoreapp2.0\TvProgramDB.Crawler.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.csprojResolveAssemblyReference.cache
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.csproj.CoreCompileInputs.cache
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.AssemblyInfoInputs.cache
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.AssemblyInfo.cs
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.pdb

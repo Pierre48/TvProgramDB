@@ -1,0 +1,11 @@
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\bin\Debug\netcoreapp2.0\TvProgramDB.WebApi.deps.json
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\bin\Debug\netcoreapp2.0\TvProgramDB.WebApi.runtimeconfig.json
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\bin\Debug\netcoreapp2.0\TvProgramDB.WebApi.runtimeconfig.dev.json
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\bin\Debug\netcoreapp2.0\TvProgramDB.WebApi.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\bin\Debug\netcoreapp2.0\TvProgramDB.WebApi.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\obj\Debug\netcoreapp2.0\TvProgramDB.WebApi.csprojResolveAssemblyReference.cache
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\obj\Debug\netcoreapp2.0\TvProgramDB.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\obj\Debug\netcoreapp2.0\TvProgramDB.WebApi.AssemblyInfoInputs.cache
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\obj\Debug\netcoreapp2.0\TvProgramDB.WebApi.AssemblyInfo.cs
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\obj\Debug\netcoreapp2.0\TvProgramDB.WebApi.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\obj\Debug\netcoreapp2.0\TvProgramDB.WebApi.pdb

@@ -1,0 +1,16 @@
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.deps.json
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.runtimeconfig.json
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.runtimeconfig.dev.json
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\TvProgramDB.Core.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\TvProgramDB.Core.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\obj\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.csprojResolveAssemblyReference.cache
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\obj\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.csproj.CoreCompileInputs.cache
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\obj\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.AssemblyInfoInputs.cache
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\obj\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.AssemblyInfo.cs
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\obj\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\obj\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.pdb
