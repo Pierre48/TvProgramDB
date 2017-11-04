@@ -16,29 +16,31 @@ namespace TvProgramDB.Crawler
         static void Main(string[] args)
         {
             var serviceProvider = ConfigureService();
-
-            Console.WriteLine("Hello World!");
-            var service = serviceProvider.GetRequiredService<ICountryService>();
-            service.Create("France");
+            
+            var service = serviceProvider.GetRequiredService<CrawlerServiceBase>();
+            service.Initialize();
+            service.Start();
+            Console.WriteLine("started");
+            Console.ReadLine();
+            service.Stop();
         }
 
         private static ServiceProvider ConfigureService()
         {
             //setup our DI
             var services = new ServiceCollection()
-                .AddLogging()
+                .AddLogging(builder => builder.SetMinimumLevel(LogLevel.Trace))
                 .AddSingleton<DbContext, TvProgramContext>()
-                .AddSingleton<IConfiguration>(GetConfiguration())
+                .AddSingleton(GetConfiguration())
                 .AddScoped(typeof(IRepository<>), typeof(EfRepository<>))
                 .AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>))
-                .AddScoped<ICountryService, CountryService>()
+                .AddScoped<CrawlerServiceBase, ProgrammeTvCrowlerService>()
                 .AddDbContext<TvProgramContext>()
                 .BuildServiceProvider();
 
             //configure console logging
-            services
-                .GetService<ILoggerFactory>()
-                .AddConsole(LogLevel.Debug);
+            var loggerFactory = services.GetService<ILoggerFactory>();
+            loggerFactory.AddConsole(LogLevel.Trace);
 
             var logger = services.GetService<ILoggerFactory>()
                 .CreateLogger<Program>();

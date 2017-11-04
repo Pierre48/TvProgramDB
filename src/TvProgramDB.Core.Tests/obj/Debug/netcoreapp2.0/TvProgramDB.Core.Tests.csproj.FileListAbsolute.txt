@@ -14,3 +14,5 @@ C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\obj\Debug\net
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\obj\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.AssemblyInfo.cs
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\obj\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.dll
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\obj\Debug\netcoreapp2.0\TvProgramDB.Core.Tests.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core.Tests\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Logging.Abstractions.xml

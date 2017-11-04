@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TvProgramDB.Core.Entities;
+using TvProgramDB.Core.Extensions;
 using TvProgramDB.Core.Interfaces;
 
 namespace TvProgramDB.Infrastructure.Data
@@ -39,9 +40,14 @@ namespace TvProgramDB.Infrastructure.Data
             return await _dbContext.Set<T>().FindAsync(id);
         }
 
-        public IEnumerable<T> ListAll()
+        public IEnumerable<T> ListAll(params string[] includes)
         {
-            return _dbContext.Set<T>().AsEnumerable();
+            IQueryable<T> set = _dbContext.Set<T>();
+            includes?.ForEach(i =>
+            {
+                set = set.Include(i);
+            });
+            return set.AsEnumerable();
         }
 
         public async Task<List<T>> ListAllAsync()

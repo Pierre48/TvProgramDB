@@ -9,7 +9,7 @@ namespace TvProgramDB.Core.Interfaces
     {
         T GetById(int id);
         T GetSingleBySpec(ISpecification<T> spec);
-        IEnumerable<T> ListAll();
+        IEnumerable<T> ListAll(params string[] includes);
         IEnumerable<T> List(ISpecification<T> spec);
         T Add(T entity);
         void Update(T entity);

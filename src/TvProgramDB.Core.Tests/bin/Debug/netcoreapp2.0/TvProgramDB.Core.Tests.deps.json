@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "1dd95dd2d0fafa61a502c5060bc1cf86e0b150a4"
+    "signature": "e72963584a62b8bdb3a33563ae9e394fd37bb271"
   },
   "compilationOptions": {},
   "targets": {
@@ -15,6 +15,22 @@
         },
         "runtime": {
           "TvProgramDB.Core.Tests.dll": {}
+        }
+      },
+      "HtmlAgilityPack.NetCore/1.5.0.1": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {}
         }
       },
       "Microsoft.CSharp/4.0.1": {
@@ -1026,6 +1042,9 @@
         }
       },
       "TvProgramDB.Core/1.0.0": {
+        "dependencies": {
+          "HtmlAgilityPack.NetCore": "1.5.0.1"
+        },
         "runtime": {
           "TvProgramDB.Core.dll": {}
         }
@@ -1037,6 +1056,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "HtmlAgilityPack.NetCore/1.5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UaLQtf8QMM1cxUDPMMBcrgX3A/56P+y4mHidgWaoiieaEG9eyODVRIKt6cQtBZaHLOVX3abGdMGVk2RnlWUAOw==",
+      "path": "htmlagilitypack.netcore/1.5.0.1",
+      "hashPath": "htmlagilitypack.netcore.1.5.0.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.0.1": {
       "type": "package",

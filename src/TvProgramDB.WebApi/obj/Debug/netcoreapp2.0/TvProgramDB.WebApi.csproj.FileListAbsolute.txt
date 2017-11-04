@@ -9,3 +9,7 @@ C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\obj\Debug\netcore
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\obj\Debug\netcoreapp2.0\TvProgramDB.WebApi.AssemblyInfo.cs
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\obj\Debug\netcoreapp2.0\TvProgramDB.WebApi.dll
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\obj\Debug\netcoreapp2.0\TvProgramDB.WebApi.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\bin\Debug\netcoreapp2.0\TvProgramDB.Core.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\bin\Debug\netcoreapp2.0\TvProgramDB.Infrastructure.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\bin\Debug\netcoreapp2.0\TvProgramDB.Core.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.WebApi\bin\Debug\netcoreapp2.0\TvProgramDB.Infrastructure.pdb

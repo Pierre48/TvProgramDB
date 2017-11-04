@@ -17,4 +17,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TvProgramDB.Core\TvProgramDB.Core.csproj" />
+    <ProjectReference Include="..\TvProgramDB.Infrastructure\TvProgramDB.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

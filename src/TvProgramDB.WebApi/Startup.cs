@@ -8,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using TvProgramDB.Core.Interfaces;
+using TvProgramDB.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace TvProgramDB.WebApi
 {
@@ -24,6 +27,10 @@ namespace TvProgramDB.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
+            services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
+
+            services.AddDbContext<TvProgramContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -10,5 +10,8 @@ namespace TvProgramDB.Core.Entities
     public class Country : BaseEntity
     {
         public string Name { get; set; }
+        public string Code { get;  set; }
+
+        public List<Chanel> Chanels { get; set; }
     }
 }

@@ -7,3 +7,5 @@ C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core\obj\Debug\netcoreap
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core\obj\Debug\netcoreapp2.0\TvProgramDB.Core.AssemblyInfo.cs
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core\obj\Debug\netcoreapp2.0\TvProgramDB.Core.dll
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core\obj\Debug\netcoreapp2.0\TvProgramDB.Core.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Core\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Logging.Abstractions.xml

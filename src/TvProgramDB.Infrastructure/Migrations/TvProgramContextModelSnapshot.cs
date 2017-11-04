@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
+using TvProgramDB.Core.Entities;
 using TvProgramDB.Infrastructure.Data;
 
 namespace TvProgramDB.Infrastructure.Migrations
@@ -18,21 +19,155 @@ namespace TvProgramDB.Infrastructure.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
-                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452");
+                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452")
+                .HasAnnotation("Relational:Sequence:.Chanel_hilo", "'Chanel_hilo', '', '1', '10', '', '', 'Int64', 'False'")
+                .HasAnnotation("Relational:Sequence:.ChanelName_hilo", "'ChanelName_hilo', '', '1', '10', '', '', 'Int64', 'False'")
+                .HasAnnotation("Relational:Sequence:.Country_hilo", "'Country_hilo', '', '1', '10', '', '', 'Int64', 'False'")
+                .HasAnnotation("Relational:Sequence:.EntityFrameworkHiLoSequence", "'EntityFrameworkHiLoSequence', '', '1', '10', '', '', 'Int64', 'False'")
+                .HasAnnotation("Relational:Sequence:.Program_hilo", "'Program_hilo', '', '1', '10', '', '', 'Int64', 'False'")
+                .HasAnnotation("Relational:Sequence:.Source_hilo", "'Source_hilo', '', '1', '10', '', '', 'Int64', 'False'");
 
-            modelBuilder.Entity("TvProgramDB.Core.Entities.Country", b =>
+            modelBuilder.Entity("TvProgramDB.Core.Entities.Chanel", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("Npgsql:HiLoSequenceName", "Chanel_hilo")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SequenceHiLo);
 
-                    b.Property<string>("Name");
+                    b.Property<int?>("CountryId");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(50);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CountryId");
 
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Countries");
+                    b.ToTable("Chanel");
+                });
+
+            modelBuilder.Entity("TvProgramDB.Core.Entities.ChanelName", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("Npgsql:HiLoSequenceName", "EntityFrameworkHiLoSequence")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SequenceHiLo);
+
+                    b.Property<int?>("ChanelId");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChanelId");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("ChanelName");
+                });
+
+            modelBuilder.Entity("TvProgramDB.Core.Entities.Country", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("Npgsql:HiLoSequenceName", "Country_hilo")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SequenceHiLo);
+
+                    b.Property<string>("Code")
+                        .HasMaxLength(2);
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Code")
+                        .IsUnique();
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("Country");
+                });
+
+            modelBuilder.Entity("TvProgramDB.Core.Entities.Program", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("Npgsql:HiLoSequenceName", "Program_hilo")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SequenceHiLo);
+
+                    b.Property<int?>("ChanelId");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.Property<DateTime>("EndDate");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.Property<int>("ProgramType");
+
+                    b.Property<DateTime>("StartDate");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChanelId");
+
+                    b.ToTable("Program");
+                });
+
+            modelBuilder.Entity("TvProgramDB.Core.Entities.Source", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("Npgsql:HiLoSequenceName", "Source_hilo")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SequenceHiLo);
+
+                    b.Property<string>("Code")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Code")
+                        .IsUnique();
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("Source");
+                });
+
+            modelBuilder.Entity("TvProgramDB.Core.Entities.Chanel", b =>
+                {
+                    b.HasOne("TvProgramDB.Core.Entities.Country", "Country")
+                        .WithMany("Chanels")
+                        .HasForeignKey("CountryId");
+                });
+
+            modelBuilder.Entity("TvProgramDB.Core.Entities.ChanelName", b =>
+                {
+                    b.HasOne("TvProgramDB.Core.Entities.Chanel")
+                        .WithMany("ChanelNames")
+                        .HasForeignKey("ChanelId");
+                });
+
+            modelBuilder.Entity("TvProgramDB.Core.Entities.Program", b =>
+                {
+                    b.HasOne("TvProgramDB.Core.Entities.Chanel", "Chanel")
+                        .WithMany()
+                        .HasForeignKey("ChanelId");
                 });
 #pragma warning restore 612, 618
         }
