@@ -20,3 +20,7 @@ C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\obj\Debug\netcor
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.AssemblyInfo.cs
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.dll
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\obj\Debug\netcoreapp2.0\TvProgramDB.Crawler.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\bin\Debug\netcoreapp2.0\TvProgramDB.Core.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\bin\Debug\netcoreapp2.0\TvProgramDB.Infrastructure.dll
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\bin\Debug\netcoreapp2.0\TvProgramDB.Core.pdb
+C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler\bin\Debug\netcoreapp2.0\TvProgramDB.Infrastructure.pdb

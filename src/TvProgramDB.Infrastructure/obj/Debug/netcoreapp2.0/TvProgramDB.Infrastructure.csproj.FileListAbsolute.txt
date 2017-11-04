@@ -1,10 +1,8 @@
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Infrastructure\bin\Debug\netcoreapp2.0\TvProgramDB.Infrastructure.deps.json
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Infrastructure\bin\Debug\netcoreapp2.0\TvProgramDB.Infrastructure.dll
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Infrastructure\bin\Debug\netcoreapp2.0\TvProgramDB.Infrastructure.pdb
-C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Infrastructure\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Infrastructure\bin\Debug\netcoreapp2.0\TvProgramDB.Core.dll
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Infrastructure\bin\Debug\netcoreapp2.0\TvProgramDB.Core.pdb
-C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Infrastructure\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Infrastructure\obj\Debug\netcoreapp2.0\TvProgramDB.Infrastructure.csprojResolveAssemblyReference.cache
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Infrastructure\obj\Debug\netcoreapp2.0\TvProgramDB.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Infrastructure\obj\Debug\netcoreapp2.0\TvProgramDB.Infrastructure.AssemblyInfoInputs.cache

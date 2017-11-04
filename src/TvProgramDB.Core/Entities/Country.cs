@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using TvProgramDB.Core.Entities;
 
-namespace TvProgramDB.WebApi
+namespace TvProgramDB.Core.Entities
 {
-    public class Country
+    public class Country : BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

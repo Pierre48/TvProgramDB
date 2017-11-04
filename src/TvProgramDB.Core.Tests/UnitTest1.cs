@@ -1,5 +1,4 @@
 using System;
-using TvProgramDB.WebApi;
 using Xunit;
 
 namespace TvProgramDB.Core.Tests

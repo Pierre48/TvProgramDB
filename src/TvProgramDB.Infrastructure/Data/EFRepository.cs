@@ -1,6 +1,11 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using TvProgramDB.Core.Entities;
+using TvProgramDB.Core.Interfaces;
 
 namespace TvProgramDB.Infrastructure.Data
 {
@@ -11,9 +16,9 @@ namespace TvProgramDB.Infrastructure.Data
     /// <typeparam name="T"></typeparam>
     public class EfRepository<T> : IRepository<T>, IAsyncRepository<T> where T : BaseEntity
     {
-        protected readonly CatalogContext _dbContext;
+        protected readonly TvProgramContext _dbContext;
 
-        public EfRepository(CatalogContext dbContext)
+        public EfRepository(TvProgramContext dbContext)
         {
             _dbContext = dbContext;
         }
