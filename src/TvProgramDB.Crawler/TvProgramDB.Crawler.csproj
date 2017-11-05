@@ -26,4 +26,10 @@
     <ProjectReference Include="..\TvProgramDB.Infrastructure\TvProgramDB.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update=".dockerignore">
+      <DependentUpon>Dockerfile</DependentUpon>
+    </None>
+  </ItemGroup>
+
 </Project>

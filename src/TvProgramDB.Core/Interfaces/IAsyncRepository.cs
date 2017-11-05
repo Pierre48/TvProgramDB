@@ -6,7 +6,7 @@ using TvProgramDB.Core.Entities;
 
 namespace TvProgramDB.Core.Interfaces
 {
-    public interface IAsyncRepository<T> where T : BaseEntity
+    public interface IAsyncRepository<T> where T : EntityBase
     {
         Task<T> GetByIdAsync(int id);
         Task<List<T>> ListAllAsync();

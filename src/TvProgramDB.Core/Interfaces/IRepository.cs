@@ -5,11 +5,13 @@ using TvProgramDB.Core.Entities;
 
 namespace TvProgramDB.Core.Interfaces
 {
-    public interface IRepository<T> where T : BaseEntity
+    public interface IRepository<T> where T : EntityBase
     {
-        T GetById(int id);
+        T GetById(int id, params string[] includes);
         T GetSingleBySpec(ISpecification<T> spec);
         IEnumerable<T> ListAll(params string[] includes);
+        IEnumerable<T> ListAll(int startIndex, int nbToTake, params string[] includes);
+        IEnumerable<T> List(ISpecification<T> spec,int startIndex, int nbToTake, params string[] includes);
         IEnumerable<T> List(ISpecification<T> spec);
         T Add(T entity);
         void Update(T entity);

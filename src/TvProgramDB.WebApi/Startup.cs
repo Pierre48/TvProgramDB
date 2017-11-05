@@ -11,6 +11,7 @@ using Microsoft.Extensions.Options;
 using TvProgramDB.Core.Interfaces;
 using TvProgramDB.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace TvProgramDB.WebApi
 {
@@ -31,6 +32,11 @@ namespace TvProgramDB.WebApi
             services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
 
             services.AddDbContext<TvProgramContext>();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "TvProgram API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +46,14 @@ namespace TvProgramDB.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "TvProgram V1");
+            });
 
             app.UseMvc();
         }

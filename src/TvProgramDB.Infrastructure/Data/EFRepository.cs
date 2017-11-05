@@ -15,7 +15,7 @@ namespace TvProgramDB.Infrastructure.Data
     /// https://blogs.msdn.microsoft.com/pfxteam/2012/04/13/should-i-expose-synchronous-wrappers-for-asynchronous-methods/
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class EfRepository<T> : IRepository<T>, IAsyncRepository<T> where T : BaseEntity
+    public class EfRepository<T> : IRepository<T>, IAsyncRepository<T> where T : EntityBase
     {
         protected readonly TvProgramContext _dbContext;
 
@@ -24,9 +24,14 @@ namespace TvProgramDB.Infrastructure.Data
             _dbContext = dbContext;
         }
 
-        public virtual T GetById(int id)
+        public virtual T GetById(int id, params string[] includes)
         {
-            return _dbContext.Set<T>().Find(id);
+            IQueryable<T> set = _dbContext.Set<T>();
+            includes?.ForEach(i =>
+            {
+                set = set.Include(i);
+            });
+            return set.FirstOrDefault(x=>x.Id==id);
         }
 
         public T GetSingleBySpec(ISpecification<T> spec)
@@ -50,12 +55,37 @@ namespace TvProgramDB.Infrastructure.Data
             return set.AsEnumerable();
         }
 
+        public IEnumerable<T> List(ISpecification<T> spec, int startIndex, int nbToTake, params string[] includes)
+        {
+            IQueryable<T> set = ListQueryable(spec);
+            includes?.ForEach(i =>
+            {
+                set = set.Include(i);
+            });
+            return set.Skip(startIndex).Take(nbToTake).AsEnumerable();
+        }
+
+        public IEnumerable<T> ListAll(int startIndex, int nbToTake, params string[] includes)
+        {
+            IQueryable<T> set = _dbContext.Set<T>();
+            includes?.ForEach(i =>
+            {
+                set = set.Include(i);
+            });
+            return set.Skip(startIndex).Take(nbToTake).AsEnumerable();
+        }
+
         public async Task<List<T>> ListAllAsync()
         {
             return await _dbContext.Set<T>().ToListAsync();
         }
 
         public IEnumerable<T> List(ISpecification<T> spec)
+        {
+            return ListQueryable(spec).AsQueryable();
+        }
+
+        private IQueryable<T> ListQueryable(ISpecification<T> spec)
         {
             // fetch a Queryable that includes all expression-based includes
             var queryableResultWithIncludes = spec.Includes
@@ -69,8 +99,7 @@ namespace TvProgramDB.Infrastructure.Data
 
             // return the result of the query using the specification's criteria expression
             return secondaryResult
-                            .Where(spec.Criteria)
-                            .AsEnumerable();
+                            .Where(spec.Criteria);
         }
         public async Task<List<T>> ListAsync(ISpecification<T> spec)
         {

@@ -7,7 +7,7 @@ using TvProgramDB.Core.Entities;
 
 namespace TvProgramDB.Core.Entities
 {
-    public class Country : BaseEntity
+    public class Country : EntityBase
     {
         public string Name { get; set; }
         public string Code { get;  set; }

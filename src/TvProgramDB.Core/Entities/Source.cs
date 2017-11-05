@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TvProgramDB.Core.Entities
 {
-    public class Source : BaseEntity
+    public class Source : EntityBase
     {
         public string Name { get; set; }
         public string Code { get; set; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TvProgramDB.Core.Entities
 {
-    public class Program : BaseEntity
+    public class Program : EntityBase
     {
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
