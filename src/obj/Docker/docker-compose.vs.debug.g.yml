@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  tvprogramdb.crawler:
+    image: tvprogramdb.crawler:dev
+    build:
+      args:
+        source: obj/Docker/empty/
+    #environment:
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_tvprogramdb.crawler$
+    volumes:
+      - C:\Users\pierr\source\repos\TvProgramDB\src\TvProgramDB.Crawler:/app
+      - C:\Users\pierr\vsdbg:/remote_debugger:ro
+      #- $nuget_user_folder_tvprogramdb.crawler$:/root/.nuget/packages:ro
+#$nuget_fallback_packages_volume_mapping_tvprogramdb.crawler$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_tvprogramdb.crawler$ bin/Debug/netcoreapp2.0/TvProgramDB.Crawler.dll"
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""

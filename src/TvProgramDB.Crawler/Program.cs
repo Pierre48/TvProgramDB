@@ -34,7 +34,7 @@ namespace TvProgramDB.Crawler
                 .AddSingleton(GetConfiguration())
                 .AddScoped(typeof(IRepository<>), typeof(EfRepository<>))
                 .AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>))
-                .AddScoped<CrawlerServiceBase, ProgrammeTvCrowlerService>()
+                .AddScoped<CrawlerServiceBase, BeinCrawlerService>()
                 .AddDbContext<TvProgramContext>()
                 .BuildServiceProvider();
 

@@ -10,6 +10,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using TvProgramDB.Core.Entities;
+using TvProgramDB.Core.Helpers;
 using TvProgramDB.Core.Interfaces;
 using TvProgramDB.Core.Specifications;
 
@@ -108,7 +109,7 @@ namespace TvProgramDB.Core.Services
         {
             string url = string.Format(BaseUrl, day.ToString("yyyy-MM-dd"),slot);
             _logger.LogDebug($"loading slot {slot} ({url})");
-            string html = GetHtml(url);
+            string html = HttpHelper.GetHtml(url);
             var doc = new HtmlDocument();
             doc.Load(new StringReader(html));
             HtmlNodeCollection links = doc.DocumentNode.SelectNodes("//div[@class='clearfix p-v-md bgc-white bb-grey-3']");
@@ -203,23 +204,6 @@ namespace TvProgramDB.Core.Services
                 _Chanels.Add(chanel);
             }
             return chanel;
-        }
-
-        private string GetHtml(string url)
-        {
-            string result = "";
-            var myRequest = (HttpWebRequest)WebRequest.Create(url);
-            myRequest.Method = "GET";
-            using (var myResponse = myRequest.GetResponse())
-            {
-                using (var sr = new StreamReader(myResponse.GetResponseStream(), Encoding.UTF8))
-                {
-                    result = sr.ReadToEnd();
-                    sr.Close();
-                }
-                myResponse.Close();
-            }
-            return result;
         }
 
         public override void Stop()
